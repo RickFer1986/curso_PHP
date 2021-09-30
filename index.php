@@ -25,6 +25,7 @@
                     <li><a href="exercicio.php?dir=controle&file=operadores_logicos">Operadores Lógicos</a></li>
                     <li><a href="exercicio.php?dir=controle&file=desafio_operadores_logicos">Desafio Operadores Lógicos</a></li>
                     <li><a href="exercicio.php?dir=controle&file=operador_ternario">Operador Ternário</a></li>
+                    <li><a href="exercicio.php?dir=controle&file=testes_if_else">Testes IF ELSE</a></li>
                 </ul>
             </div>
 
