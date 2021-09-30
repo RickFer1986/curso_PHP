@@ -2,29 +2,53 @@
 
 <?php
 
-$ligado = true;
-$pressButton = false;
+$luzLigada = "Ligada";
+$luzDesligada = "Desligada";
 
-echo "TV Ligada?";
+$botaoON = $luzLigada;
+$botaoOFF = $luzDesligada;
+
+echo "Luz: " . $botaoON;
 echo "<br>";
+echo "Luz: " . $botaoOFF;
 
-if($ligado == true){
-    echo "Sim <br>";
-    echo "Assistindo TV <br>";
-}else{
-    echo "Não <br>";
-    echo "Estou descansando<br>";
-}
-echo "Pressionando botão?";
+
 echo "<br>";
+$energia = false;
+$pressButton = true;
+$statusButton = '';
 
-if($pressButton == true){
-    echo "Sim<br>";
-    echo "Mudando de canal";
-}else{
-    echo "Não<br>";
-    echo "Deixa quieto";
+// ENERGIA
+if($energia == false){
+    $statusEnergia = $luzDesligada;
+}elseif($energia == true && $botaoON){
+    $statusEnergia = $luzLigada;
+}elseif($energia == true && $botaoOFF){
+    $statusEnergia = $luzDesligada;
 }
+
+
+// MEXENDO NO BOTÃO
+if($botaoON == $pressButton){
+    $statusButton = $botaoOFF;
+}elseif($botaoOFF == $pressButton){
+    $statusButton = $botaoON;
+}else{
+    echo "Nada acontece";
+}
+
+
+
+if($pressButton == $botaoON && $energia == true && $luzLigada == false){
+    $status = "Ligada";
+}elseif($pressButton == true && $luzLigada == true){
+    $status = "Apagada";
+}
+
+
+echo "Status da luz: " . $status;
+
+
 
 
 ?>
