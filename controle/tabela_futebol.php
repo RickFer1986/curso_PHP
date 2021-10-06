@@ -86,45 +86,32 @@
 
         display: flex;
         justify-content: space-around;
-        grid-template-columns: 5px 5px 5px 5px 5px 5px 5px 5px 15px;
-        grid-template-areas: 
-        "pts pj vit e der gp gc sg ultimas"
-        ;
     }
     .pts{
-        grid-area: pts;
         font-size: 0.9rem;
     }
     .pj{
-        grid-area: pj;
         font-size: 0.9rem;
     }
     .vit{
-        grid-area: vit;
         font-size: 0.9rem;
     }
     .e{
-        grid-area: e;
         font-size: 0.9rem;
     }
     .der{
-        grid-area: der;
         font-size: 0.9rem;
     }
     .gp{
-        grid-area: gp;
         font-size: 0.9rem;
     }
     .gc{
-        grid-area: gc;
         font-size: 0.9rem;
     }
     .sg{
-        grid-area: sg;
         font-size: 0.9rem;
     }
     .ultimas{
-        grid-area: ultimas;
         font-size: 0.9rem;
     }
 
@@ -138,17 +125,20 @@
         </ul>
     </nav>
 </header>
+<div>
+    <form class="form-fut">
+        <select>
+            <label>Liga</label>
+            <option>Premier League</option>
+            <option>Liga dos Campeões</option>
+            <option>Liga Europa</option>
+            <option>Copa dos Campeões Internacionais</option>
+        </select>
+    </form>
+</div>
 <div class="container2">
     <div class="col-1">
-        <form class="form-fut">
-            <select>
-                <label>Liga</label>
-                <option>Premier League</option>
-                <option>Liga dos Campeões</option>
-                <option>Liga Europa</option>
-                <option>Copa dos Campeões Internacionais</option>
-            </select>
-        </form>
+        
     </div>
 
     <div class="col-2">
