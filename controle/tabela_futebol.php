@@ -130,7 +130,7 @@
 
     .col-1 {
         grid-area: col-1;
-        height: 40px;
+        padding: 20px;
     }
     .col-1 p{
         font-size: 0.8rem;
@@ -139,9 +139,14 @@
     }
     .col-1 ol li{
         font-size: 0.8rem;
+        color: white;
+        border-bottom: 0.1rem solid white;
+
+        padding: 5px;
     }
     .col-1 ol li img{
         max-width: 25px;
+        margin: 0 15px 0 5px;
     }
 
     .col-2 {
