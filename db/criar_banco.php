@@ -5,9 +5,15 @@
 require_once "conexao.php";
 
 $conexao = novaConexao(null);
-$sql = 'CREATE DATABASE curso_php';
+$sql = 'CREATE DATABASE IF NOT EXISTS curso_php'; // IF NOT EXISTS faz com que não exiba erro.
 
-$conexao->query($sql);
+$resultado = $conexao->query($sql);
+
+if($resultado){
+    echo "Sucesso :)";
+}else{
+    echo "Erro: " . $conexao->error;
+}
 
 $conexao->close();
 
